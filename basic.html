@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="headerStyling">
+        <h1 style="color: white; font-size: 85px;">Memory Game</h1>
+        <p style="color: rgb(255, 238, 238); font-size: 80px;" id="numberFlash">0</p>
+        <button onclick="ready()" id="ready" name="ready">Ready?</button>
+    </div>
+    <div class="instructionsStyling">
+        <h2>How to play</h2>
+        <h3>A number will flash on the screen. <br>Memorize it and enter it. <br> Try to answer as many correct as possible</h2>
+    </div>
+    <div class="buttonPositions">
+    <button onclick="startGame()" id="startGame" name="startGame" style="height: 50px;">Generate Numbers</button>
+    <p style="color: white; font-size: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif;">Select Difficulty</p>
+    <br>
+    <div class="difficulty">
+    <button onclick="easy()" id="Easy" name="Easy" style="height: 20px;">Easy</button>
+    <button onclick="medium()" id="medium" name="medium" style="height: 20px;">Medium</button>
+    <button onclick="hard()" id="hard" name="hard" style="height: 20px;">Hard</button>
+    </div>
+    <br>
+    <button id="resetGame" name="resetGame" onclick="resetGame()">Reset Game</button>
+    </div>
+    <div class="scoreBoard">
+    <h2>Correct Answers: <p id="correctAnswers">0</p></h2>
+    <br>
+    <h2>Incorrect Answers: <p id="incorrectAnswers">0</p></h2>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- Create a memory game that displays a number on the screen and then asks the player for an input afterwards indicating what they saw
+Do this forever and stop the program when it reaches the wrong input -->
